@@ -1,0 +1,6 @@
+flowchart LR
+    A["Source Systems"] -- Direct Dump of Source Extraction ---> B["Staging Layer"]
+    B --Data Cleansing & Scrubbing --> C["ODS Layer"]
+    C --Business Logics--> D["EDW Layer"]
+    D --Subeset of DWH--> E["Data Marts"]
+    E --Reports for BI & AI --> F["BI Reports / Dashboards"]
